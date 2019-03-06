@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Crystal Game</title>
+</head>
+<body>
+
+<div class="rulesbox">
+    <p class="rules">You will be given a random number at the start of the game.
+    <br><br>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
+    <br><br>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.
+    <br><br>The value of each crystal is hidden from you until you click on it. Each time when the game starts, the game will change the value of each crystal.</p>
+</div>
+
+
+<div class ="numberbox">
+    <h1 class=computernumber id="comprandom"></h1>
+</div>
+
+<div class="crystalbox"> 
+    <img class="c1" src="assets/images/crystal1.png">
+    <img class="c2" src="assets/images/crystal2.png">
+    <img class="c3" src="assets/images/crystal3.jpg">
+    <img class="c4" src="assets/images/crystal4.jpg">
+</div>
+
+<div class="resultbox">
+    <p class="results"><span id="result">j</span></p>
+    <p class="results"><span id="winpoint">0</span></p>
+    <p class="results"><span id="losepoint">0</span></p>
+</div>
+
+
+<script type="text/javascript">
+$(document).ready(function() {
+
+//set variables
+var crystal1 = $(".c1"); 
+var crystal2 = $(".c2"); 
+var crystal3 = $(".c3");
+var crystal3 = $(".c4"); //create empty variable and find element
+// var genNum = $(".comprandom") + Math.floor(Math.random() * 20); //randomized number and set to genNum
+
+compNum = Math.floor(Math.random() * 120);
+$("#comprandom").text(compNum)
+
+//generate numbers
+$(".c1").on("click", function() {
+    var crystal1 = Math.floor(Math.random() * 20);
+    console.log(crystal1);
+});
+
+$(".c2").on("click", function() {
+    var crystal1 = Math.floor(Math.random() * 20);
+    console.log(crystal1);
+});
+
+$(".c3").on("click", function() {
+    var crystal1 = Math.floor(Math.random() * 20);
+    console.log(crystal1);
+});
+
+$(".c4").on("click", function() {
+    var crystal1 = Math.floor(Math.random() * 20);
+    console.log(crystal1);
+});
+
+
+
+});
+//conditions 
+
+</script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+body {
+background-image: url("../images/Sunburst_Rays_2880x1800.png");
+background-repeat: no-repeat;
+}
+
+.rulesbox {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    background: #30296d;
+    padding: 15px;
+    margin-bottom: 10px;
+} 
+
+img {
+    height: 90px;
+    width: 90px;
+}
+
+.crystalbox {
+    float:left;
+    padding-top: 40px;
+    margin: 0px 40px 0px 20px;
+}
+.numberbox {
+    float: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    background: #942350;
+    color: #ffffff;
+    height: 200px; 
+    width: 170px;
+    margin-right: 10px;
+}
+
+h1 {
+    padding: 10px;
+    margin-left: 25px;
+}
+
+.resultbox {
+    float: left;
+    height: 200px;
+    width: 170px;
+    background: #157F2C;
+
+}
+
+p.rules {
+    text-align:center;
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+p.results {
+    padding-top:10px;
+    text-align:center;
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 22px;
+}
