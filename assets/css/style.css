@@ -1,15 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-background-image: url("../images/Sunburst_Rays_2880x1800.png");
-background-repeat: no-repeat;
+background: #9293e9;
 }
 
 .rulesbox {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 18px;
-    background: #30296d;
+    background: #8c6565;
     padding: 15px;
-    margin-bottom: 10px;
+    margin: 20px 30px 20px 30px;
+    border: 2px solid black;
+    border-radius: 5px;
 } 
+
+.content {
+margin-left: 100px;
+width: 100%;
+}
 
 img {
     height: 90px;
@@ -18,30 +28,53 @@ img {
 
 .crystalbox {
     float:left;
-    padding-top: 40px;
-    margin: 0px 40px 0px 20px;
+    padding: 40px;
+    margin: 20px;
+    background: #c8d5df;
+    border: 2px solid black;
+    border-radius: 5px;
 }
+
 .numberbox {
     float: left;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 30px;
-    background: #942350;
+    background:#644b25;
     color: #ffffff;
     height: 200px; 
     width: 170px;
     margin-right: 10px;
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
 }
 
-h1 {
-    padding: 10px;
-    margin-left: 25px;
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+}
+.yournumbox {
+    float:left;
+    height: 200px;
+    width: 170px;
+    background: #414675;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-right: 20px;
+    margin: 20px;
 }
 
 .resultbox {
     float: left;
     height: 200px;
     width: 170px;
-    background: #157F2C;
+    background: #854a2C;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 20px;
 
 }
 
@@ -49,13 +82,53 @@ p.rules {
     text-align:center;
     color: #ffffff;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
+    font-size: 18px;
+
+}
+
+#addnum {
+    margin-left: 50px;
+    margin-bottom: 50px;
+    font-size: 50px;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#comprandom {
+    margin-left: 40px;
+    margin-bottom: 50px;
+    font-size: 50px;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 55px;
 }
 
 p.results {
-    padding-top:10px;
-    text-align:center;
-    color: #ffffff;
+    margin-left:30px;
+    font-size: 25px;
+    color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 22px;
+    line-height: 1cm;
+}
+
+@media only screen and (max-width: 768px) {
+.maincontent {
+    width: 40%;
+}
+}
+
+@media only screen and (max-width: 480px) {
+.crystalbox {
+    width: 60%;
+}
+.resultbox {
+    width: 60%;
+}
+.numberbox {
+    width: 60%;
+}
+
+.yournumbox {
+    width: 60%;
+}
 }
